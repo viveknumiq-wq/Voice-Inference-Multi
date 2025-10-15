@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Voice AI Demo",
-  description: "Demonstration of using the Ultravox API to create a call with an AI agent.",
+  description: "Demonstration of Voice AI Agent",
 };
 
 export default function RootLayout({
