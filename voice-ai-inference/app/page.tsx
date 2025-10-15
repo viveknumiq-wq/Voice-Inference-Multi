@@ -27,13 +27,13 @@ export default function Home() {
       {/* Your Content Here */}
       {/* <div className="relative z-10 flex flex-col items-center justify-center min-h-screen">
         {/* Language Selector */}
-        {hasMultipleLanguages() && (
+        {/* {hasMultipleLanguages() && (
           <div className="absolute top-4 right-4">
             <LanguageSelector 
               currentLanguage={language} 
               onLanguageChange={handleLanguageChange} 
             />
-          </div> */}
+          </div> */} */}
         )}
         {/* Title and Subtitle */}
         <div className="text-center mb-12">
