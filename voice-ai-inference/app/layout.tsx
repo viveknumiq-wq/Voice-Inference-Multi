@@ -21,10 +21,6 @@ export default function RootLayout({
         {/* <!-- / Fathom --> */}
       </head>
       <body className="bg-white text-black">
-        <div className="flex mx-auto justify-between  max-w-[1206px]">
-     
-   
-        </div>
         {children}
       </body>
     </html>

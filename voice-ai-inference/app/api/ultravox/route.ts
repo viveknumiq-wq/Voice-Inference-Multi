@@ -5,6 +5,13 @@ export async function POST(request: NextRequest) {
   try {
     const body: CallConfig = await request.json();
     console.log('Attempting to call Ultravox API...');
+    console.log('API Key present:', !!process.env.ULTRAVOX_API_KEY);
+    console.log('API Key length:', process.env.ULTRAVOX_API_KEY?.length || 0);
+    
+    if (!process.env.ULTRAVOX_API_KEY) {
+      throw new Error('ULTRAVOX_API_KEY environment variable is not set');
+    }
+    
     const response = await fetch('https://api.ultravox.ai/api/calls', {
       method: 'POST',
       headers: {
